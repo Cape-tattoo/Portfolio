@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cape - Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h3>Cape</h3>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#projects">Projetos</a></li>
+        <li><a href="#contact">Contact-me</a></li>
+      </ul>
+      <div>
+        <nav class="dropdown">
+          <button>Contato</button>
+          <div class="conteudo-dropdown">
+            <a href="#"><img src="https://img.icons8.com/?size=100&id=Xy10Jcu1L2Su&format=png&color=000000" alt="instagram"></a>
+            <a href="#"><img src="https://img.icons8.com/?size=100&id=62856&format=png&color=000000" alt="github"></a>
+            <a href="#"><img src="https://img.icons8.com/?size=100&id=13912&format=png&color=000000" alt="facebook"></a>
+            <a href="#"><img src="https://img.icons8.com/?size=100&id=16713&format=png&color=000000" alt="whatsapp"></a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="home" id="home">
+      <div> <h2>CAPE</h2>
+      <p>Desenvolvedor Front-End em constante evolução, focado em criar interfaces modernas e interativas.</p>
+      </div>
+      <a href=""> <img src="./assets/CV BALL.png" alt="CV" target="_blank"></a>
+      <!-- <img class="ball" src="./assets/BIG GLOW.png" alt="Imagem de Fundo" /> -->
+    </section>
+
+    <section class="about" id="about">
+      <h2>SOBRE <br />MIM</h2>
+      <img src="./assets/background-about.jpg" alt="Imagem de Fundo" class="fundo"/>  
+      <img src="./assets/avatar.jpg" alt="perfil" class="perfil"/>
+      <p>
+        Conheça Cape, um Estudante de FullStack apaixonado por criar soluções
+        digitais elegantes e funcionais. Dominando HTML, CSS, JavaScript e
+        outras tecnologias, seu olhar atento aos detalhes — aliado ao
+        compromisso de se manter atualizado com as tendências do setor — garante
+        que cada projeto realizado seja não apenas visualmente impressionante,
+        mas também otimizado para um desempenho de alto nível.
+      </p>
+    </section>
+
+    <!-- <section class="skills" id="skills">
+      <h2>My <br />Skills</h2>
+      <p>
+        HTML
+        <img
+          src="https://img.icons8.com/?size=100&id=85389&format=png&color=000000"
+          alt=""
+        />
+        <img
+          src="https://img.icons8.com/?size=100&id=89281&format=png&color=000000"
+          alt=""
+        />
+      </p>
+      <p>
+        CSS
+        <img
+          src="https://img.icons8.com/?size=100&id=85389&format=png&color=000000"
+          alt=""
+        />
+        <img
+          src="https://img.icons8.com/?size=100&id=89281&format=png&color=000000"
+          alt=""
+        />
+      </p>
+      <p>
+        JavaScript
+        <img
+          src="https://img.icons8.com/?size=100&id=85389&format=png&color=000000"
+          alt=""
+        />
+        <img
+          src="https://img.icons8.com/?size=100&id=89281&format=png&color=000000"
+          alt=""
+        />
+      </p>
+    </section> -->
+
+    <section class="projects" id="projects">
+      <!-- <img src="./assets/background-projects.jpg" alt="Imagem de Fundo" class="fundo"/> -->
+      <h2>My <br />Projects</h2>
+
+      <div id="projects-container">
+      <a href="#">
+        <img src="./assets/Rectangle 9.png" alt="Project 1" id="project1"/></a>
+        <p>Projeto 1</p>
+      </div>
+
+    <div id="projects-container2">
+      <a href="#">
+        <img src="./assets/Rectangle 10 (1).png" alt="Project 2"id="project2"></a>
+        <p>projeto 2</p>
+    </div>
+
+      <div id="projects-container3">
+      <a href="#">
+        <img src="./assets/Rectangle 8.png" alt="Project1" id="project1"/></a>
+        <p>Projeto 3</p>
+      </div>
+
+      <div id="projects-container4">
+      <a href="#">
+        <img src="./assets/Rectangle 9.png" alt="Project 4" id="project2"/></a>
+        <p>Projeto 4</p>
+      </div>
+
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <input type="text" placeholder="Enter your name here..." class="name" />
+        <input type="email"placeholder="Enter your email here..."autocomplete="on" class="email"/>
+        <textarea placeholder="Enter the message Here..." class="message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+  </body>
+</html>

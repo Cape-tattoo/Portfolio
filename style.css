@@ -1,0 +1,579 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  color: #fff;
+  position: fixed;
+  z-index: 1000;
+  width: 92vw;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 25px 65px;
+  align-content: center;
+  background: rgba(255, 255, 255, 0.23);
+  border-radius: 50px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.9px);
+  -webkit-backdrop-filter: blur(4.9px);
+  left: 0;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 7rem;
+  align-items: left;
+  font-family: "inter", sans-serif;
+  font-size: 1.2rem;
+}
+
+header ul li a {
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+}
+
+header ul li a:hover {
+  transition: 0.3s;
+  scale: 1.5;
+}
+
+header button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: "inter", sans-serif;
+  width: 199px;
+  height: 50px;
+}
+
+header button:hover {
+  background-color: #555;
+  transition: 0.3s;
+  transform: scale(1.05);
+}
+
+header h3 {
+  font-family: "K2D", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-left: 2rem;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.conteudo-dropdown {
+  position: absolute;
+  display: none;
+  margin-left: 3.3rem;
+  top: 2.7rem;
+}
+
+.conteudo-dropdown a {
+  display: block;
+  align-items: center;
+}
+
+.conteudo-dropdown a img {
+  width: 50px;
+  height: 50px;
+  margin: 0.5rem;
+}
+
+.dropdown:hover .conteudo-dropdown {
+  display: block;
+  position: absolute;
+  background-color: #3333336b;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 0.5rem;
+  border-radius: 50px;
+}
+
+.dropdown .conteudo-dropdown a img:hover {
+  transition: 0.3s;
+  transform: scale(1.5);
+}
+
+section {
+  background-image: url("./assets/fundo2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 400vh;
+}
+
+.home {
+  display: flex;
+
+  align-items: center;
+  justify-content: inline;
+  height: 100vh;
+  background-color: #7962fa;
+}
+
+.home button {
+  background-color: none;
+  border: none;
+  color: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.home div {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  width: 500px;
+  margin-left: 5rem;
+  margin-right: 4rem;
+}
+
+.home h2 {
+  font-family: "K2D", sans-serif;
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  font-weight: 900;
+  color: rgb(74, 91, 245);
+}
+
+.home p {
+  font-family: "inter", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  max-width: 900px;
+  text-align: left;
+  color: white;
+}
+
+.home a {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 50px;
+  font-family: "inter", sans-serif;
+  margin-left: 4rem;
+  animation: cvanimation 1s infinite alternate;
+}
+
+@keyframes cvanimation {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.home a:hover {
+  animation: none;
+  transition: 0.3s;
+  transform: scale(1.05);
+}
+
+.about {
+  background-position: center 33.33%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 80px 10%;
+}
+
+.about h2 {
+  font-family: "K2D", sans-serif;
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  font-weight: 900;
+  position: relative;
+  z-index: 2;
+  left: 25%;
+  bottom: 25%;
+  color: rgb(74, 91, 245);
+}
+
+.about .perfil {
+  width: 600px;
+  height: 500px;
+  border-radius: 40%;
+  position: relative;
+  right: 15%;
+}
+
+.about .fundo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.about p {
+  font-family: "inter", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  max-width: 1000px;
+  text-align: center;
+  color: white;
+}
+
+/* .skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #333;
+  color: #fff;
+} */
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background-color: #333;
+}
+
+.projects h2 {
+  font-family: "K2D", sans-serif;
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  font-weight: 900;
+  position: relative;
+  left: 5%;
+  bottom: 0;
+  color: rgb(74, 91, 245);
+}
+
+.projects #projects-container {
+  display: flex;
+  position: relative;
+  right: 25%;
+}
+
+.projects #projects-container:hover {
+  transition: 0.3s;
+  transform: scale(1.05);
+}
+
+.projects #projects-container2 {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+  position: relative;
+  left: 25%;
+}
+
+.projects #projects-container2:hover {
+  transition: 0.3s;
+  transform: scale(1.05);
+}
+
+.projects #projects-container3 {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+  position: relative;
+  right: 25%;
+}
+
+.projects #projects-container3:hover {
+  transition: 0.3s;
+  transform: scale(1.05);
+}
+
+.projects #projects-container4 {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+  position: relative;
+  left: 25%;
+}
+
+.projects #projects-container4:hover {
+  transition: 0.3s;
+  transform: scale(1.05);
+}
+
+.projects p {
+  font-family: "k2d", sans-serif;
+  font-size: 2rem;
+  line-height: 1.5;
+  max-width: 1000px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  right: 9%;
+  color: white;
+}
+
+.projects img {
+  width: 400px;
+  height: 300px;
+  border-radius: 20px;
+  object-fit: cover;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.projects .fundo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  border-radius: 0;
+  z-index: -1;
+}
+
+.contact {
+  background-position: center bottom;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #fff;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 517px;
+}
+
+.contact h2 {
+  font-family: "K2D", sans-serif;
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  font-weight: 900;
+  position: relative;
+  bottom: 0;
+  color: rgb(74, 91, 245);
+}
+
+.contact .name {
+  padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+  border-radius: 50px;
+  border: none;
+  width: 100%;
+}
+
+.contact .email {
+  padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+  border-radius: 50px;
+  border: none;
+  width: 100%;
+}
+
+.contact .message {
+  padding: 1.5rem;
+  border-radius: 30px;
+  border: none;
+  width: 100%;
+  height: 150px;
+}
+
+.contact button {
+  background-color: #7962fa;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: "inter", sans-serif;
+}
+
+.contact button:hover {
+  transition: 0.3s;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  body {
+    width: 100%;
+    overflow-x: hidden; /* Garante que nada que saia da tela gere a barra/borda branca */
+  }
+
+  header {
+    width: 90%; /* Ocupa 90% da largura da tela */
+    left: 2%; /* Centraliza o header horizontalmente */
+    margin: 15px 0 0 0; /* Remove as margens laterais físicas que empurravam o elemento */
+    align-items: center;
+    padding: 1rem;
+  }
+
+  header ul {
+    display: none;
+  }
+
+  /* Ajuste para o botão do header não esmagar em telas muito pequenas */
+  header button {
+    width: auto;
+    max-width: 200px;
+  }
+
+  .conteudo-dropdown {  
+    right: 1.5px;
+  }
+
+  .conteudo-dropdown a img {
+    width: 30px;
+    height: 30px;
+  }
+
+  section {
+    margin: 0;
+    padding: 0;
+  }
+
+  .home {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 20px; /* Evita que o texto encoste nas bordas físicas da tela */
+  }
+
+  .home div {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 10rem;
+    width: 100%; /* Em vez de auto, garante que respeite o limite do container */
+  }
+
+  .home p {
+    text-align: center;
+  }
+
+  /* Correção do botão/link da home que tinha margem desalinhada */
+  .home a {
+    margin-left: 0;
+    margin-top: 5rem;
+  }
+
+  .about {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 5%;
+  }
+
+  .about h2 {
+    left: 0;
+    bottom: 0;
+  }
+
+  .about .perfil {
+    right: 0;
+    margin-top: 2rem;
+    width: 100%; /* Ocupa a largura disponível */
+    max-width: 320px; /* Não passa de 320px (tamanho ótimo para mobile) */
+    height: auto; /* Mantém a proporção da foto sem achatar */
+  }
+
+
+.about #projects-container {
+  width: 10%;
+}
+
+.about #projects-container2 {
+  width: 10;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.projects div {
+  display: flex;
+  gap: 2rem;
+  margin-top: 5rem;
+  position: relative;
+}
+
+.projects #projects-container {
+  right: 0;
+  left: 0;
+}
+
+ .projects #projects-container2 {
+  left: 0;
+} 
+
+.projects #projects-container3 {
+  right: 0;
+}
+
+.projects #projects-container4 {
+  left: 0;
+}
+
+.projects h2 {
+  font-family: "K2D", sans-serif;
+  font-size: 3rem;
+  margin-top: 10rem;
+  margin-bottom: 1rem;
+  font-weight: 900;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  color: rgb(74, 91, 245);
+  text-align: center;
+}
+
+.projects img {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 0 20px; 
+}
+
+.contact form {
+  width: 100vw;
+  padding: 1.5rem;
+  align-items: center;
+}
+
+.contact h2{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10rem;
+}
+
+.contact button {
+  width: 70%;
+}
+}
